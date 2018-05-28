@@ -16,6 +16,10 @@ declare namespace egretad {
         static CLICK: string;
         /**广告对象 */
         private ad;
+        static lag: string;
+        static lat: string;
+        static time: number;
+        static flag: boolean;
         /**
          * @param id 从开放平台获取的广告ID
          * @param target 添加到舞台的对象
@@ -29,5 +33,8 @@ declare namespace egretad {
         addEventListener(event: string, callback: Function): void;
         /**显示广告 */
         show(): void;
+        upload(id: any, category: any, target: any): void;
+        LagLat(id: any, target: any): void;
+        PopOut(id: any, target: any): void;
     }
 }
