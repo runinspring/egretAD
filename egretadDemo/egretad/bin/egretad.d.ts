@@ -33,6 +33,8 @@ declare namespace egretad {
         addEventListener(event: string, callback: Function): void;
         /**显示广告 */
         show(): void;
+        showAll(): void;
+        close(): void;
         upload(id: any, category: any, target: any): void;
         LagLat(id: any, target: any): void;
         PopOut(id: any, target: any): void;

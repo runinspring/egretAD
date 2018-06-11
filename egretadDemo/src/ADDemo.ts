@@ -30,8 +30,8 @@ class ADDemo extends egret.DisplayObjectContainer {
     }
     private ad: egretad.AD;
     private createAD() {
-        //初始化广告，必须加载到舞台以后才可以调用，208 为测试key，请替换成你申请的广告key
-        var ad = new egretad.AD('208',this);
+        //初始化广告，必须加载到舞台以后才可以调用
+        var ad = new egretad.AD('56',this);
         this.ad = ad;
         console.log('广告SDK版本:',egretad.AD.VERSION);
         // this.ad2 = egretad.Manager.getAD('key2');//可以创建更多的广告
